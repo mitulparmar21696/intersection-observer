@@ -4,7 +4,7 @@ import { useEffect, useCallback, useRef } from 'react';
 export const useFetch = (data, dispatch) => {
   useEffect(() => {
     dispatch({ type: 'FETCHING_PRODUCT_DATA', fetching: true })
-    let url = `http://localhost:3000/api/products?${data.sort ? `_sort=${data.sort}&` : ''}_page=${data.page}&_limit=20`;
+    let url = `http://localhost:8000/api/products?${data.sort ? `_sort=${data.sort}&` : ''}_page=${data.page}&_limit=20`;
 
     fetch(url)
       .then(data => data.json())

@@ -93,7 +93,7 @@ function Test() {
                 {index % 20 === 0 ? <Card style={{ width: '20rem', height: '300px', margin: '10px' }}>
 
                   <Card.Body>
-                    <img className="ad" src={`http://localhost:3000/ads/?r=${Math.floor(Math.random() * 1000)}`} />
+                    <img className="ad" src={`http://localhost:8000/ads/?r=${Math.floor(Math.random() * 1000)}`} />
                   </Card.Body>
                 </Card> : <Card style={{ width: '20rem', height: '300px', margin: '10px' }}>
 

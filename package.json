@@ -5,9 +5,9 @@
   "description": "Build a grid of product items and ads",
   "main": "server/index.js",
   "scripts": {
-    "json-server": "json-server server/index.js --routes server/routes.json --middlewares server/handle-delay.js server/handle-ads.js",
+    "json-server": "json-server --port 8000 server/index.js --routes server/routes.json --middlewares server/handle-delay.js server/handle-ads.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "react": "webpack-dev-server --open",
+    "react": "webpack-dev-server --open --port 3000",
     "start": "concurrently \"npm run json-server\" \"npm run react\""
   },
   "babel": {
